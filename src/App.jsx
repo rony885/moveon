@@ -3,6 +3,9 @@ import "./App.css";
 import Loader from "./components/Loader";
 import PageDirection from "./components/PageDirection";
 import Header from "./components/Header/Header";
+import MobileMenu from "./components/MobileMenu/MobileMenu";
+import CategoryMenu from "./components/CategoryMenu";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -12,8 +15,10 @@ function App() {
           {/* <Loader /> */}
           <PageDirection />
           <Header />
+          <MobileMenu />
+          <CategoryMenu />
           <Routes>
-            {/* <Route path="/home" element={<Home />}></Route> */}
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
