@@ -7,6 +7,8 @@ import Product from "./Product";
 import ProductOthers from "./ProductOthers";
 import ClientsSection from "./ClientsSection";
 import ProductTab from "./ProductTab";
+import TrendingBanner from "./TrendingBanner";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <ProductOthers />
       <ClientsSection />
       <ProductTab />
+      <TrendingBanner />
+      <Blog />
     </div>
   );
 };

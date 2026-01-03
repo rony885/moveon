@@ -1,186 +1,186 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CategoryMenu = () => {
   return (
-    <div class="category-menu">
-      <div class="menu-backdrop"></div>
-      <div class="outer-box">
-        <div class="upper-box">
-          <div class="nav-logo">
-            <a href="index-2.html">
-              <img src="assets/images/logo-dark.png" alt="" title="" />
-            </a>
+    <div className="category-menu">
+      <div className="menu-backdrop"></div>
+      <div className="outer-box">
+        <div className="upper-box">
+          <div className="nav-logo">
+            <Link to="/">
+              <img src="/assets/images/logo-dark.png" alt="" title="" />
+            </Link>
           </div>
-          <div class="close-btn">
-            <i class="icon-9"></i>
+          <div className="close-btn">
+            <i className="icon-9"></i>
           </div>
         </div>
         <p>BROWSE CATEGORIES</p>
-        <div class="category-box">
-          <ul class="category-list clearfix">
-            <li class="category-dropdown">
-              <a href="#">Phone and Tablets</a>
+        <div className="category-box">
+          <ul className="category-list clearfix">
+            <li className="category-dropdown">
+              <Link to="#">Phone and Tablets</Link>
               <ul>
                 <li>
-                  <a href="shop-details.html">Android</a>
+                  <Link to="/shop-details">Android</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">IOS</a>
+                  <Link to="/shop-details">IOS</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Microsoft</a>
+                  <Link to="/shop-details">Microsoft</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Java</a>
+                  <Link to="/shop-details">Java</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Touch Screen</a>
+                  <Link to="/shop-details">Touch Screen</Link>
                 </li>
               </ul>
             </li>
-            <li class="category-dropdown">
-              <a href="#">Laptop & Desktop</a>
+            <li className="category-dropdown">
+              <Link to="#">Laptop & Desktop</Link>
               <ul>
                 <li>
-                  <a href="shop-details.html">Gaming</a>
+                  <Link to="/shop-details">Gaming</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">MacBook</a>
+                  <Link to="/shop-details">MacBook</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Ultrabook</a>
+                  <Link to="/shop-details">Ultrabook</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">iMac</a>
+                  <Link to="/shop-details">iMac</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Touch Screen</a>
+                  <Link to="/shop-details">Touch Screen</Link>
                 </li>
               </ul>
             </li>
-            <li class="category-dropdown">
-              <a href="#">Sound Equipment</a>
+            <li className="category-dropdown">
+              <Link to="#">Sound Equipment</Link>
               <ul>
                 <li>
-                  <a href="shop-details.html">Airport sounds</a>
+                  <Link to="/shop-details">Airport sounds</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Amphibians and reptiles</a>
+                  <Link to="/shop-details">Amphibians and reptiles</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Animal sounds</a>
+                  <Link to="/shop-details">Animal sounds</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Bell sounds</a>
+                  <Link to="/shop-details">Bell sounds</Link>
                 </li>
                 <li>
-                  <a href="shop-details.html">Birdsong</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="shop-details.html">Power & Accessories</a>
-            </li>
-            <li>
-              <a href="shop-details.html">Fitness & Wearable</a>
-            </li>
-            <li class="category-dropdown">
-              <a href="#">Peripherals</a>
-              <ul>
-                <li>
-                  <a href="shop-details.html">Mouse</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Keyboard</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Monitor</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">RAM</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">DVD</a>
-                </li>
-              </ul>
-            </li>
-            <li class="category-dropdown">
-              <a href="#">Cover & Glass</a>
-              <ul>
-                <li>
-                  <a href="shop-details.html">Clear Tempered Glass</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Anti-Glare Tempered Glass</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Privacy Tempered Glass</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Full-coverage Tempered Glass</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">Colored Tempered Glass</a>
-                </li>
-              </ul>
-            </li>
-            <li class="category-dropdown">
-              <a href="#">Smart Electronics</a>
-              <ul>
-                <li>
-                  <a href="shop-details.html">smart lights</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">security camera</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">smart plug</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">video doorbell</a>
-                </li>
-                <li>
-                  <a href="shop-details.html">smart display</a>
+                  <Link to="/shop-details">Birdsong</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="shop-details.html">Home Appliance</a>
+              <Link to="/shop-details">Power & Accessories</Link>
             </li>
             <li>
-              <a href="shop-details.html">Drone & Camera</a>
+              <Link to="/shop-details">Fitness & Wearable</Link>
+            </li>
+            <li className="category-dropdown">
+              <Link to="#">Peripherals</Link>
+              <ul>
+                <li>
+                  <Link to="/shop-details">Mouse</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Keyboard</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Monitor</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">RAM</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">DVD</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="category-dropdown">
+              <Link to="#">Cover & Glass</Link>
+              <ul>
+                <li>
+                  <Link to="/shop-details">Clear Tempered Glass</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Anti-Glare Tempered Glass</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Privacy Tempered Glass</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Full-coverage Tempered Glass</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">Colored Tempered Glass</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="category-dropdown">
+              <Link to="#">Smart Electronics</Link>
+              <ul>
+                <li>
+                  <Link to="/shop-details">smart lights</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">security camera</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">smart plug</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">video doorbell</Link>
+                </li>
+                <li>
+                  <Link to="/shop-details">smart display</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/shop-details">Home Appliance</Link>
+            </li>
+            <li>
+              <Link to="/shop-details">Drone & Camera</Link>
             </li>
           </ul>
-          <ul class="category-list clearfix">
+          <ul className="category-list clearfix">
             <li>
-              <a href="index-2.html">
+              <Link to="/">
                 New Products <span>New</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="index-2.html">Discounted Goods</a>
+              <Link to="/">Discounted Goods</Link>
             </li>
             <li>
-              <a href="index-2.html">
+              <Link to="/">
                 Best Selling Products <span>For You</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <p>BLONWE HELPS</p>
-        <ul class="category-list pb_30 clearfix">
+        <ul className="category-list pb_30 clearfix">
           <li>
-            <a href="index-2.html">Wishlist</a>
+            <Link to="/">Wishlist</Link>
           </li>
           <li>
-            <a href="index-2.html">Compare</a>
+            <Link to="/">Compare</Link>
           </li>
           <li>
-            <a href="account.html">My account</a>
+            <Link to="/account">My account</Link>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

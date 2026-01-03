@@ -1755,8 +1755,6 @@
 
 // export default ProductTab;
 
-
-
 import React, { useState } from "react";
 
 const tabs = [
@@ -1784,7 +1782,7 @@ const products = [
   },
   {
     id: 2,
-    category: "Device",
+    category: "Mobile",
     title: "Box Shinecon 3D Glass with Remote",
     price: 29.99,
     image: "assets/images/shop/shop-27.png",
@@ -1794,7 +1792,7 @@ const products = [
   },
   {
     id: 3,
-    category: "Accessories",
+    category: "Audio",
     title: "Super Slim Rechargeable Wireless Mouse",
     price: 12.99,
     image: "assets/images/shop/shop-28.png",
@@ -1813,7 +1811,7 @@ const products = [
   },
   {
     id: 5,
-    category: "Accessories",
+    category: "Watch",
     title: "Logitech MX Master 3 Advanced Wireless",
     price: 59.99,
     image: "assets/images/shop/shop-30.png",
@@ -1822,7 +1820,7 @@ const products = [
   },
   {
     id: 6,
-    category: "Gaming",
+    category: "Internet",
     title: "VR Remote Controller Gamepad Bluetooth",
     price: 359.99,
     image: "assets/images/shop/shop-31.png",
@@ -1847,7 +1845,6 @@ const ProductTab = () => {
     <section className="shop-two pb_50">
       <div className="large-container">
         <div className="tabs-box">
-
           {/* TITLE & TABS */}
           <div className="title-content">
             <div className="sec-title">
@@ -1858,9 +1855,7 @@ const ProductTab = () => {
               {tabs.map((tab) => (
                 <li
                   key={tab}
-                  className={`tab-btn ${
-                    activeTab === tab ? "active-btn" : ""
-                  }`}
+                  className={`tab-btn ${activeTab === tab ? "active-btn" : ""}`}
                   onClick={() => setActiveTab(tab)}
                 >
                   {tab}
@@ -1873,11 +1868,9 @@ const ProductTab = () => {
           <div className="tabs-content">
             <div className="tab active-tab">
               <div className="inner-container clearfix">
-
                 {filteredProducts.map((product) => (
                   <div className="shop-block-two" key={product.id}>
                     <div className="inner-box">
-
                       {/* IMAGE */}
                       <div className="image-box">
                         {product.badge && (
@@ -1971,13 +1964,11 @@ const ProductTab = () => {
                 ))}
 
                 {filteredProducts.length === 0 && (
-                  <p>No products found.</p>
+                  <p className="text-center">No products found.</p>
                 )}
-
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
