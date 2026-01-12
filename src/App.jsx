@@ -8,6 +8,8 @@ import CategoryMenu from "./components/CategoryMenu";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import ScrolltoTop from "./components/ScrolltoTop";
+import Product from "./pages/Product/Product";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,8 +39,10 @@ function App() {
           <CategoryMenu />
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/shop" element={<Product />}></Route>
           </Routes>
           <Footer />
+          <ScrolltoTop />
         </div>
       </BrowserRouter>
     </div>

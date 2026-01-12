@@ -17,7 +17,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
               <div className="search-area">
                 <div className="category-inner">
                   <div className="select-box">
-                    <select className="wide">
+                    <select className="wide fs-6">
                       <option data-display="Select Category">
                         Select Category
                       </option>
@@ -177,7 +177,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_10">
-                          <img src="assets/images/shop/shop-1.png" alt="" />
+                          <img src="/assets/images/shop/shop-1.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -632,31 +632,31 @@ const Header = ({ toggleMenu, menuOpen }) => {
                             <Link to="/">Electronics</Link>
                           </li>
                           <li>
-                            <Link to="index-3.html">Grocery</Link>
+                            <Link to="index-3">Grocery</Link>
                           </li>
                           <li>
-                            <Link to="index-4.html">Fish & Meat</Link>
+                            <Link to="index-4">Fish & Meat</Link>
                           </li>
                           <li>
-                            <Link to="index-5.html">Vegetable</Link>
+                            <Link to="index-5">Vegetable</Link>
                           </li>
                           <li>
-                            <Link to="index-6.html">Furniture</Link>
+                            <Link to="index-6">Furniture</Link>
                           </li>
                           <li>
-                            <Link to="index-7.html">Medical</Link>
+                            <Link to="index-7">Medical</Link>
                           </li>
                           <li>
-                            <Link to="index-8.html">Kids</Link>
+                            <Link to="index-8">Kids</Link>
                           </li>
                           <li>
-                            <Link to="index-9.html">Gardeing</Link>
+                            <Link to="index-9">Gardeing</Link>
                           </li>
                           <li>
-                            <Link to="index-10.html">Watch</Link>
+                            <Link to="index-10">Watch</Link>
                           </li>
                           <li>
-                            <Link to="index-11.html">Pet</Link>
+                            <Link to="/">Pet</Link>
                           </li>
                         </ul>
                       </li>
@@ -664,40 +664,40 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Shop</Link>
                         <ul>
                           <li>
-                            <Link to="shop.html">Shop Page 1</Link>
+                            <Link to="/shop">Shop</Link>
                           </li>
                           <li>
-                            <Link to="shop-2.html">Shop Page 2</Link>
+                            <Link to="shop-2">Shop Page 2</Link>
                           </li>
                           <li>
-                            <Link to="shop-3.html">Shop Page 3</Link>
+                            <Link to="shop-3">Shop Page 3</Link>
                           </li>
                           <li>
-                            <Link to="shop-4.html">Shop Page 4</Link>
+                            <Link to="shop-4">Shop Page 4</Link>
                           </li>
                           <li>
-                            <Link to="shop-5.html">Shop Page 5</Link>
+                            <Link to="shop-5">Shop Page 5</Link>
                           </li>
                           <li>
                             <Link to="/shop-details">Shop Details 1</Link>
                           </li>
                           <li>
-                            <Link to="shop-details-2.html">Shop Details 2</Link>
+                            <Link to="shop-details-2">Shop Details 2</Link>
                           </li>
                           <li>
-                            <Link to="cart.html">Cart</Link>
+                            <Link to="cart">Cart</Link>
                           </li>
                           <li>
-                            <Link to="checkout.html">Checkout</Link>
+                            <Link to="checkout">Checkout</Link>
                           </li>
                           <li>
-                            <Link to="search.html">Search Result</Link>
+                            <Link to="search">Search Result</Link>
                           </li>
                           <li>
-                            <Link to="account.html">Account</Link>
+                            <Link to="account">Account</Link>
                           </li>
                           <li>
-                            <Link to="compare.html">Compare</Link>
+                            <Link to="compare">Compare</Link>
                           </li>
                         </ul>
                       </li>
@@ -705,16 +705,16 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Pages</Link>
                         <ul>
                           <li>
-                            <Link to="about.html">About Us</Link>
+                            <Link to="/about">About Us</Link>
                           </li>
                           <li>
-                            <Link to="login.html">Log In</Link>
+                            <Link to="/login">Log In</Link>
                           </li>
                           <li>
-                            <Link to="signup.html">Sign Up</Link>
+                            <Link to="/signup">Sign Up</Link>
                           </li>
                           <li>
-                            <Link to="error.html">404</Link>
+                            <Link to="error">404</Link>
                           </li>
                         </ul>
                       </li>
@@ -722,18 +722,18 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Blog</Link>
                         <ul>
                           <li>
-                            <Link to="blog.html">Blog Grid</Link>
+                            <Link to="/blog">Blog Grid</Link>
                           </li>
                           <li>
-                            <Link to="blog-2.html">Blog Standard</Link>
+                            <Link to="blog-2">Blog Standard</Link>
                           </li>
                           <li>
-                            <Link to="blog-details.html">Blog Details</Link>
+                            <Link to="/blog-details">Blog Details</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <Link to="contact.html">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -780,7 +780,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                       <div className="cart-products">
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-1.png"
                                 alt=""
@@ -801,7 +801,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         </div>
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-2.png"
                                 alt=""
@@ -822,7 +822,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         </div>
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-3.png"
                                 alt=""
@@ -847,13 +847,13 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <span className="cart-total-price">$1103.97</span>
                       </div>
                       <div className="cart-action">
-                        <Link to="cart.html" className="theme-btn btn-two">
+                        <Link to="cart" className="theme-btn btn-two">
                           View Cart <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
                         </Link>
-                        <Link to="checkout.html" className="theme-btn btn-one">
+                        <Link to="checkout" className="theme-btn btn-one">
                           Checkout <span></span>
                           <span></span>
                           <span></span>
@@ -1401,31 +1401,31 @@ const Header = ({ toggleMenu, menuOpen }) => {
                             <Link to="/">Electronics</Link>
                           </li>
                           <li>
-                            <Link to="index-3.html">Grocery</Link>
+                            <Link to="index-3">Grocery</Link>
                           </li>
                           <li>
-                            <Link to="index-4.html">Fish &amp; Meat</Link>
+                            <Link to="index-4">Fish &amp; Meat</Link>
                           </li>
                           <li>
-                            <Link to="index-5.html">Vegetable</Link>
+                            <Link to="index-5">Vegetable</Link>
                           </li>
                           <li>
-                            <Link to="index-6.html">Furniture</Link>
+                            <Link to="index-6">Furniture</Link>
                           </li>
                           <li>
-                            <Link to="index-7.html">Medical</Link>
+                            <Link to="index-7">Medical</Link>
                           </li>
                           <li>
-                            <Link to="index-8.html">Kids</Link>
+                            <Link to="index-8">Kids</Link>
                           </li>
                           <li>
-                            <Link to="index-9.html">Gardeing</Link>
+                            <Link to="index-9">Gardeing</Link>
                           </li>
                           <li>
-                            <Link to="index-10.html">Watch</Link>
+                            <Link to="index-10">Watch</Link>
                           </li>
                           <li>
-                            <Link to="index-11.html">Pet</Link>
+                            <Link to="/">Pet</Link>
                           </li>
                         </ul>
                         <div className="dropdown-btn">
@@ -1436,40 +1436,40 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Shop</Link>
                         <ul>
                           <li>
-                            <Link to="shop.html">Shop Page 1</Link>
+                            <Link to="shop">Shop Page 1</Link>
                           </li>
                           <li>
-                            <Link to="shop-2.html">Shop Page 2</Link>
+                            <Link to="shop-2">Shop Page 2</Link>
                           </li>
                           <li>
-                            <Link to="shop-3.html">Shop Page 3</Link>
+                            <Link to="shop-3">Shop Page 3</Link>
                           </li>
                           <li>
-                            <Link to="shop-4.html">Shop Page 4</Link>
+                            <Link to="shop-4">Shop Page 4</Link>
                           </li>
                           <li>
-                            <Link to="shop-5.html">Shop Page 5</Link>
+                            <Link to="shop-5">Shop Page 5</Link>
                           </li>
                           <li>
                             <Link to="/shop-details">Shop Details 1</Link>
                           </li>
                           <li>
-                            <Link to="shop-details-2.html">Shop Details 2</Link>
+                            <Link to="shop-details-2">Shop Details 2</Link>
                           </li>
                           <li>
-                            <Link to="cart.html">Cart</Link>
+                            <Link to="cart">Cart</Link>
                           </li>
                           <li>
-                            <Link to="checkout.html">Checkout</Link>
+                            <Link to="checkout">Checkout</Link>
                           </li>
                           <li>
-                            <Link to="search.html">Search Result</Link>
+                            <Link to="search">Search Result</Link>
                           </li>
                           <li>
-                            <Link to="account.html">Account</Link>
+                            <Link to="account">Account</Link>
                           </li>
                           <li>
-                            <Link to="compare.html">Compare</Link>
+                            <Link to="compare">Compare</Link>
                           </li>
                         </ul>
                         <div className="dropdown-btn">
@@ -1480,16 +1480,16 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Pages</Link>
                         <ul>
                           <li>
-                            <Link to="about.html">About Us</Link>
+                            <Link to="about">About Us</Link>
                           </li>
                           <li>
-                            <Link to="login.html">Log In</Link>
+                            <Link to="login">Log In</Link>
                           </li>
                           <li>
-                            <Link to="signup.html">Sign Up</Link>
+                            <Link to="signup">Sign Up</Link>
                           </li>
                           <li>
-                            <Link to="error.html">404</Link>
+                            <Link to="error">404</Link>
                           </li>
                         </ul>
                         <div className="dropdown-btn">
@@ -1500,13 +1500,13 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <Link to="/">Blog</Link>
                         <ul>
                           <li>
-                            <Link to="blog.html">Blog Grid</Link>
+                            <Link to="blog">Blog Grid</Link>
                           </li>
                           <li>
-                            <Link to="blog-2.html">Blog Standard</Link>
+                            <Link to="blog-2">Blog Standard</Link>
                           </li>
                           <li>
-                            <Link to="blog-details.html">Blog Details</Link>
+                            <Link to="blog-details">Blog Details</Link>
                           </li>
                         </ul>
                         <div className="dropdown-btn">
@@ -1514,7 +1514,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         </div>
                       </li>
                       <li>
-                        <Link to="contact.html">Contact</Link>
+                        <Link to="contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -1582,7 +1582,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                       <div className="cart-products">
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-1.png"
                                 alt=""
@@ -1603,7 +1603,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         </div>
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-2.png"
                                 alt=""
@@ -1624,7 +1624,7 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         </div>
                         <div className="product">
                           <figure className="image-box">
-                            <Link to="blog-details.html">
+                            <Link to="blog-details">
                               <img
                                 src="assets/images/resource/cart-3.png"
                                 alt=""
@@ -1649,13 +1649,13 @@ const Header = ({ toggleMenu, menuOpen }) => {
                         <span className="cart-total-price">$1103.97</span>
                       </div>
                       <div className="cart-action">
-                        <Link to="cart.html" className="theme-btn btn-two">
+                        <Link to="cart" className="theme-btn btn-two">
                           View Cart <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
                         </Link>
-                        <Link to="checkout.html" className="theme-btn btn-one">
+                        <Link to="checkout" className="theme-btn btn-one">
                           Checkout <span></span>
                           <span></span>
                           <span></span>
