@@ -1,8 +1,119 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+const products = [
+  {
+    id: 1,
+    category: "Mobile",
+    title: "Iphone 12 Red Color Veriant",
+    image: "assets/images/shop/shop-10.png",
+    price: 92.99,
+    oldPrice: 83.99,
+    discount: "-6%",
+    rating: 5,
+    reviews: 5,
+    stock: "in",
+    badge: "discount",
+  },
+  {
+    id: 2,
+    category: "Storage",
+    title: "32GB Camera CCTV Micro SD Card",
+    image: "assets/images/shop/shop-12.png",
+    price: 12.99,
+    rating: 5,
+    reviews: 5,
+    stock: "out",
+  },
+  {
+    id: 3,
+    category: "Music",
+    title: "Sony Bluetooth-compatible Speaker",
+    image: "assets/images/shop/shop-13.png",
+    price: 45.99,
+    rating: 5,
+    reviews: 2,
+    stock: "in",
+    badge: "hot",
+  },
+  {
+    id: 4,
+    category: "Music",
+    title: "JBL Speaker with Built-in Battery",
+    image: "assets/images/shop/shop-14.png",
+    price: 59.99,
+    rating: 5,
+    reviews: 5,
+    stock: "in",
+  },
+  {
+    id: 5,
+    category: "Power",
+    title: "Boss Inverter Welding Machine",
+    image: "assets/images/shop/shop-15.png",
+    price: 359.99,
+    rating: 5,
+    reviews: 4,
+    stock: "in",
+  },
+  {
+    id: 6,
+    category: "Video",
+    title: "Vintage 1970s Sony AVC-1420 Video",
+    image: "assets/images/shop/shop-26.png",
+    price: 149.99,
+    rating: 5,
+    reviews: 4,
+    stock: "in",
+    badge: "discount",
+    discount: "-6%",
+  },
+  {
+    id: 7,
+    category: "Device",
+    title: "Box Shinecon 3D Glass with Remote",
+    image: "assets/images/shop/shop-27.png",
+    price: 78.99,
+    rating: 5,
+    reviews: 4.8,
+    stock: "out",
+  },
+  {
+    id: 8,
+    category: "Accessories",
+    title: "Super Slim Wireless Mouse",
+    image: "assets/images/shop/shop-28.png",
+    price: 15.99,
+    rating: 5,
+    reviews: 5,
+    stock: "in",
+    badge: "hot",
+  },
+  {
+    id: 9,
+    category: "Mobile Parts",
+    title: "Samsung 15W Fast Magnetic Charger",
+    image: "assets/images/shop/shop-29.png",
+    price: 12.99,
+    rating: 5,
+    reviews: 4.9,
+    stock: "in",
+  },
+  {
+    id: 10,
+    category: "Gaming",
+    title: "Boss Inverter Welding Machine",
+    image: "assets/images/shop/shop-30.png",
+    price: 27.99,
+    rating: 5,
+    reviews: 5,
+    stock: "in",
+    badge: "hot",
+  },
+];
+
 const ProductInfo = () => {
-      const [view, setView] = useState("grid"); // grid | list
+  const [view, setView] = useState("grid"); // grid | list
 
   return (
     <>
@@ -93,66 +204,6 @@ const ProductInfo = () => {
                           <label for="checkbox3">Apple</label>
                         </div>
                       </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox4"
-                          />
-                          <label for="checkbox4">Xiaomi</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox5"
-                          />
-                          <label for="checkbox5">Toshiba</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox6"
-                          />
-                          <label for="checkbox6">Philips</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox7"
-                          />
-                          <label for="checkbox7">Sumsung</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox8"
-                          />
-                          <label for="checkbox8">Huawei</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox9"
-                          />
-                          <label for="checkbox9">Grunding</label>
-                        </div>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -189,46 +240,6 @@ const ProductInfo = () => {
                                 <label for="checkbox11">MacBook Air</label>
                               </div>
                             </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox12"
-                                />
-                                <label for="checkbox12">Asus</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox26"
-                                />
-                                <label for="checkbox26">HP</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox27"
-                                />
-                                <label for="checkbox27">Toshiba</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox28"
-                                />
-                                <label for="checkbox28">Lenovo</label>
-                              </div>
-                            </li>
                           </ul>
                         </div>
                       </li>
@@ -259,36 +270,6 @@ const ProductInfo = () => {
                                 <label for="checkbox14">Samsung</label>
                               </div>
                             </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox15"
-                                />
-                                <label for="checkbox15">Google Pixel</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox29"
-                                />
-                                <label for="checkbox29">Lenovo</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox30"
-                                />
-                                <label for="checkbox30">Xiaomi</label>
-                              </div>
-                            </li>
                           </ul>
                         </div>
                       </li>
@@ -317,16 +298,6 @@ const ProductInfo = () => {
                                   id="checkbox17"
                                 />
                                 <label for="checkbox17">Samsung</label>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="check-box">
-                                <input
-                                  className="check"
-                                  type="checkbox"
-                                  id="checkbox18"
-                                />
-                                <label for="checkbox18">Xiaomi</label>
                               </div>
                             </li>
                           </ul>
@@ -362,46 +333,6 @@ const ProductInfo = () => {
                             id="checkbox21"
                           />
                           <label for="checkbox21">Tv</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox22"
-                          />
-                          <label for="checkbox22">Monitors</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox23"
-                          />
-                          <label for="checkbox23">Watches</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox24"
-                          />
-                          <label for="checkbox24">Mouse</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input
-                            className="check"
-                            type="checkbox"
-                            id="checkbox25"
-                          />
-                          <label for="checkbox25">Keyboard</label>
                         </div>
                       </li>
                     </ul>
@@ -815,7 +746,7 @@ const ProductInfo = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-9 col-md-12 col-sm-12 content-side">
               <div className="our-shop">
                 <div className="item-shorting">
@@ -842,2045 +773,513 @@ const ProductInfo = () => {
                     </div>
                     <div className="menu-box">
                       <p>Show:</p>
-                      {/* <button className="grid-view on mr_10">
-                        <img src="assets/images/icons/icon-4.png" alt="" />
+                      <button
+                        className={`grid-view mr_10 ${
+                          view === "grid" ? "on" : ""
+                        }`}
+                        onClick={() => setView("grid")}
+                      >
+                        <img
+                          src="/assets/images/icons/icon-4.png"
+                          alt="Grid View"
+                        />
                       </button>
-                      <button className="list-view">
-                        <img src="assets/images/icons/icon-5.png" alt="" />
-                      </button> */}
-                       <button
-          className={`grid-view mr_10 ${view === "grid" ? "on" : ""}`}
-          onClick={() => setView("grid")}
-        >
-          <img src="assets/images/icons/icon-4.png" alt="Grid View" />
-        </button>
 
-        <button
-          className={`list-view ${view === "list" ? "on" : ""}`}
-          onClick={() => setView("list")}
-        >
-          <img src="assets/images/icons/icon-5.png" alt="List View" />
-        </button>
+                      <button
+                        className={`list-view ${view === "list" ? "on" : ""}`}
+                        onClick={() => setView("list")}
+                      >
+                        <img
+                          src="/assets/images/icons/icon-5.png"
+                          alt="List View"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>
-                {/* <div className="wrapper grid"> */}
-                      <div className={`wrapper ${view}`}>
-                        {view === "grid" && (  
-                  <div className="shop-grid-content">
-                    <div className="inner-container clearfix">
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="discount-product p_absolute l_0 t_7">
-                              -6%
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-10.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-10.png"
-                                alt=""
-                              />
-                            </figure>
+
+                <div className={`wrapper ${view}`}>
+                  {view === "grid" && (
+                    <div className="shop-grid-content">
+                      <div className="inner-container clearfix">
+                        {products.map((item) => (
+                          <div className="shop-block-two" key={item.id}>
+                            <div className="inner-box">
+                              <div className="image-box">
+                                {item.badge === "hot" && (
+                                  <span className="hot-product p_absolute l_0 t_7">
+                                    Hot
+                                  </span>
+                                )}
+
+                                {item.badge === "discount" && (
+                                  <span className="discount-product p_absolute l_0 t_7">
+                                    {item.discount}
+                                  </span>
+                                )}
+                                <ul className="option-list">
+                                  <li>
+                                    <Link
+                                      to="/assets/images/shop/shop-10.png"
+                                      className="lightbox-image"
+                                      data-fancybox="gallery"
+                                    >
+                                      <i className="far fa-eye"></i>
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="/shop-details">
+                                      <i className="icon-5"></i>
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <button type="button">
+                                      <i className="icon-6"></i>
+                                    </button>
+                                  </li>
+                                </ul>
+                                <figure className="image">
+                                  <img src={item.image} alt={item.title} />
+                                </figure>
+                              </div>
+
+                              <div className="lower-content">
+                                <span className="text">{item.category}</span>
+                                <h4>{item.title}</h4>
+                                <h5>
+                                  ${item.price}
+                                  {item.oldPrice && <del>${item.oldPrice}</del>}
+                                </h5>
+                                <ul className="rating">
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <span>(5)</span>
+                                  </li>
+                                </ul>
+                                {item.stock === "in" ? (
+                                  <span className="product-stock">
+                                    <img
+                                      src="/assets/images/icons/icon-1.png"
+                                      alt=""
+                                    />
+                                    In Stock
+                                  </span>
+                                ) : (
+                                  <span className="product-stock-out">
+                                    <img
+                                      src="/assets/images/icons/icon-2.png"
+                                      alt=""
+                                    />
+                                    Stock Out
+                                  </span>
+                                )}
+                                <div className="cart-btn">
+                                  <button
+                                    type="button"
+                                    className={`theme-btn ${
+                                      item.stock === "out" ? "not" : ""
+                                    }`}
+                                    disabled={item.stock === "out"}
+                                  >
+                                    {item.stock === "out"
+                                      ? "Not Available"
+                                      : "Add to Cart"}
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div className="lower-content">
-                            <span className="text">Mobile</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Iphone 12 Red Color Veriant
+                        ))}
+                      </div>
+                      <div className="cta-section mt_30 mb_40">
+                        <div className="inner-container">
+                          <div
+                            className="bg-layer"
+                            style={{
+                              backgroundImage:
+                                "url('/assets/images/background/cta-bg.jpg')",
+                            }}
+                          ></div>
+                          <div className="content-box">
+                            <span className="text">Trending</span>
+                            <h2>Get the Virtual Experience</h2>
+                            <h3>
+                              <span>Starting From</span> $83.99
+                            </h3>
+                            <div className="btn-box">
+                              <Link to="/" className="theme-btn btn-one">
+                                Shop Now<span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                               </Link>
-                            </h4>
-                            <h5>
-                              $92.99<del>$83.99</del>
-                            </h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-12.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-12.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Storage</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                32GB Camera CCTV Micro SD Card
-                              </Link>
-                            </h4>
-                            <h5>$12.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock-out">
-                              <img
-                                src="assets/images/icons/icon-2.png"
-                                alt=""
-                              />
-                              Stock Out
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn not">
-                                Not Available<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
+                      <div className="inner-container clearfix">
+                        {products.map((item) => (
+                          <div className="shop-block-two" key={item.id}>
+                            <div className="inner-box">
+                              <div className="image-box">
+                                {item.badge === "hot" && (
+                                  <span className="hot-product p_absolute l_0 t_7">
+                                    Hot
+                                  </span>
+                                )}
+
+                                {item.badge === "discount" && (
+                                  <span className="discount-product p_absolute l_0 t_7">
+                                    {item.discount}
+                                  </span>
+                                )}
+                                <ul className="option-list">
+                                  <li>
+                                    <Link
+                                      to="/assets/images/shop/shop-10.png"
+                                      className="lightbox-image"
+                                      data-fancybox="gallery"
+                                    >
+                                      <i className="far fa-eye"></i>
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="shop-details.html">
+                                      <i className="icon-5"></i>
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <button type="button">
+                                      <i className="icon-6"></i>
+                                    </button>
+                                  </li>
+                                </ul>
+                                <figure className="image">
+                                  <img src={item.image} alt={item.title} />
+                                </figure>
+                              </div>
+
+                              <div className="lower-content">
+                                <span className="text">{item.category}</span>
+                                <h4>{item.title}</h4>
+                                <h5>
+                                  ${item.price}
+                                  {item.oldPrice && <del>${item.oldPrice}</del>}
+                                </h5>
+                                <ul className="rating">
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <span>(5)</span>
+                                  </li>
+                                </ul>
+                                {item.stock === "in" ? (
+                                  <span className="product-stock">
+                                    <img
+                                      src="/assets/images/icons/icon-1.png"
+                                      alt=""
+                                    />
+                                    In Stock
+                                  </span>
+                                ) : (
+                                  <span className="product-stock-out">
+                                    <img
+                                      src="/assets/images/icons/icon-2.png"
+                                      alt=""
+                                    />
+                                    Stock Out
+                                  </span>
+                                )}
+                                <div className="cart-btn">
+                                  <button
+                                    type="button"
+                                    className={`theme-btn ${
+                                      item.stock === "out" ? "not" : ""
+                                    }`}
+                                    disabled={item.stock === "out"}
+                                  >
+                                    {item.stock === "out"
+                                      ? "Not Available"
+                                      : "Add to Cart"}
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="hot-product p_absolute l_0 t_7">
-                              Hot
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-13.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-13.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Music</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Sony Bluetooth-compatible Speaker
-                              </Link>
-                            </h4>
-                            <h5>$45.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(2)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-14.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-14.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Music</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                JBL Speaker with Built-in Battery
-                              </Link>
-                            </h4>
-                            <h5>$59.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-15.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-15.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Power</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Boss Inverter Welding Machine
-                              </Link>
-                            </h4>
-                            <h5>$359.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="discount-product p_absolute l_0 t_7">
-                              -6%
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-26.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-26.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Video</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Vintage 1970s Sony AVC-1420 Video
-                              </Link>
-                            </h4>
-                            <h5>$149.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-27.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-27.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Device</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Box Shinecon 3D Glass with Remote
-                              </Link>
-                            </h4>
-                            <h5>$78.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4.8)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock-out">
-                              <img
-                                src="assets/images/icons/icon-2.png"
-                                alt=""
-                              />
-                              Stock Out
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn not">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="hot-product p_absolute l_0 t_7">
-                              Hot
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-28.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-28.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Accessories</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Super Slim Wireless Mouse
-                              </Link>
-                            </h4>
-                            <h5>$15.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-29.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-29.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">MObile Parts</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Samsung 15W Fast Magnetic Charger
-                              </Link>
-                            </h4>
-                            <h5>$12.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4.9)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-30.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-30.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Gaming</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Boss Inverter Welding Machine
-                              </Link>
-                            </h4>
-                            <h5>$27.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                        ))}
                       </div>
                     </div>
-                    <div className="cta-section mt_30 mb_40">
-                      <div className="inner-container">
-                        <div
-                          className="bg-layer"
-                          style={{
-                            backgroundImage:
-                              "url('/assets/images/background/cta-bg.jpg')",
-                          }}
-                        ></div>
-                        <div className="content-box">
-                          <span className="text">Trending</span>
-                          <h2>Get the Virtual Experience</h2>
-                          <h3>
-                            <span>Starting From</span> $83.99
-                          </h3>
-                          <div className="btn-box">
-                            <Link to="/" className="theme-btn btn-one">
-                              Shop Now<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </Link>
+                  )}
+
+                  {view === "list" && (
+                    <div className="shop-list-content">
+                      {products.map((prod) => {
+                        return (
+                          <div key={prod.id} className="shop-block-seven">
+                            <div className="inner-box">
+                              <div className="image-box">
+                                {prod.badge === "hot" && (
+                                  <span className="hot-product p_absolute l_0 t_7">
+                                    Hot
+                                  </span>
+                                )}
+
+                                {prod.badge === "discount" && (
+                                  <span className="discount-product p_absolute l_0 t_7">
+                                    {prod.discount}
+                                  </span>
+                                )}
+                                <figure className="image">
+                                  <img src={prod.image} alt="Imagee" />
+                                </figure>
+                              </div>
+                              <div className="content-box">
+                                <span className="text">{prod.category}</span>
+                                <h4>
+                                  <Link to="/shop-details">{prod.title}</Link>
+                                </h4>
+
+                                <h5>
+                                  ${prod.price}
+                                  {prod.oldPrice && <del>${prod.oldPrice}</del>}
+                                </h5>
+                                <ul className="rating">
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <span>(4.5)</span>
+                                  </li>
+                                </ul>
+                                {/* <span className="product-stock mb_30">
+                                  <img
+                                    src="assets/images/icons/icon-1.png"
+                                    alt=""
+                                  />
+
+                                  {prod.stock}
+                                </span> */}
+                                {prod.stock === "in" ? (
+                                  <span className="product-stock mb_30">
+                                    <img
+                                      src="/assets/images/icons/icon-1.png"
+                                      alt=""
+                                    />
+                                    In Stock
+                                  </span>
+                                ) : (
+                                  <span className="product-stock-out mb_30">
+                                    <img
+                                      src="/assets/images/icons/icon-2.png"
+                                      alt=""
+                                    />
+                                    Stock Out
+                                  </span>
+                                )}
+
+                                {/* <div className="cart-btn">
+                                  <button type="button" className="theme-btn">
+                                    Add to Cart<span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div> */}
+                                <div className="cart-btn">
+                                  <button
+                                    type="button"
+                                    className={`theme-btn ${
+                                      prod.stock === "out" ? "not" : ""
+                                    }`}
+                                    disabled={prod.stock === "out"}
+                                  >
+                                    {prod.stock === "out"
+                                      ? "Not Available"
+                                      : "Add to Cart"}
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="feature-content">
+                                <ul className="feature-list clearfix">
+                                  <li>1/2.5-Inch Large MOS Sensor</li>
+                                  <li>
+                                    24x Optical Zoom and 32x 4K Intelligent Zoom
+                                  </li>
+                                  <li>
+                                    5-Axis HYBRID O.I.S Image Stabilisation
+                                  </li>
+                                  <li>
+                                    Wireless Twin Sub Camera Functionality
+                                  </li>
+                                  <li>Active Contrast and HDR Movie Mode</li>
+                                  <li>26 Megapixel Still Photos</li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
+                        );
+                      })}
+
+                      {products.map((prod) => {
+                        return (
+                          <div key={prod.id} className="shop-block-seven">
+                            <div className="inner-box">
+                              <div className="image-box">
+                                {prod.badge === "hot" && (
+                                  <span className="hot-product p_absolute l_0 t_7">
+                                    Hot
+                                  </span>
+                                )}
+
+                                {prod.badge === "discount" && (
+                                  <span className="discount-product p_absolute l_0 t_7">
+                                    {prod.discount}
+                                  </span>
+                                )}
+                                <figure className="image">
+                                  <img src={prod.image} alt="Imagee" />
+                                </figure>
+                              </div>
+                              <div className="content-box">
+                                <span className="text">{prod.category}</span>
+                                <h4>
+                                  <Link to="/shop-details">{prod.title}</Link>
+                                </h4>
+
+                                <h5>
+                                  ${prod.price}
+                                  {prod.oldPrice && <del>${prod.oldPrice}</del>}
+                                </h5>
+                                <ul className="rating">
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <i className="icon-11"></i>
+                                  </li>
+                                  <li>
+                                    <span>(4.5)</span>
+                                  </li>
+                                </ul>
+
+                                {prod.stock === "in" ? (
+                                  <span className="product-stock mb_30">
+                                    <img
+                                      src="/assets/images/icons/icon-1.png"
+                                      alt=""
+                                    />
+                                    In Stock
+                                  </span>
+                                ) : (
+                                  <span className="product-stock-out mb_30">
+                                    <img
+                                      src="/assets/images/icons/icon-2.png"
+                                      alt=""
+                                    />
+                                    Stock Out
+                                  </span>
+                                )}
+
+                                <div className="cart-btn">
+                                  <button
+                                    type="button"
+                                    className={`theme-btn ${
+                                      prod.stock === "out" ? "not" : ""
+                                    }`}
+                                    disabled={prod.stock === "out"}
+                                  >
+                                    {prod.stock === "out"
+                                      ? "Not Available"
+                                      : "Add to Cart"}
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="feature-content">
+                                <ul className="feature-list clearfix">
+                                  <li>1/2.5-Inch Large MOS Sensor</li>
+                                  <li>
+                                    24x Optical Zoom and 32x 4K Intelligent Zoom
+                                  </li>
+                                  <li>
+                                    5-Axis HYBRID O.I.S Image Stabilisation
+                                  </li>
+                                  <li>
+                                    Wireless Twin Sub Camera Functionality
+                                  </li>
+                                  <li>Active Contrast and HDR Movie Mode</li>
+                                  <li>26 Megapixel Still Photos</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                    <div className="inner-container clearfix">
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="discount-product p_absolute l_0 t_7">
-                              -6%
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-350.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-350.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">watch</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Smart watch latest model in the best price
-                              </Link>
-                            </h4>
-                            <h5>
-                              $86.99<del>$92.99</del>
-                            </h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-351.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-351.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">refrigerator</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                double door refrigerator best price
-                              </Link>
-                            </h4>
-                            <h5>$999.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock-out">
-                              <img
-                                src="assets/images/icons/icon-2.png"
-                                alt=""
-                              />
-                              Stock Out
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn not">
-                                Not Available<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="hot-product p_absolute l_0 t_7">
-                              Hot
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-352.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-352.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">wireless</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                new model router providing flexibility in
-                              </Link>
-                            </h4>
-                            <h5>$53.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(2)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-353.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-353.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">storage</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                USB flash drives come in various storage
-                              </Link>
-                            </h4>
-                            <h5>$11.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-354.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-354.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Accessories</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                higher precision work on more feature
-                              </Link>
-                            </h4>
-                            <h5>$16.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="discount-product p_absolute l_0 t_7">
-                              -6%
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-355.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-355.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">computer</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                iMacs offer varying amounts of RAM
-                              </Link>
-                            </h4>
-                            <h5>$1700.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-356.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-356.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Headphone</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                The VR headset is the primary component
-                              </Link>
-                            </h4>
-                            <h5>$78.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4.8)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock-out">
-                              <img
-                                src="assets/images/icons/icon-2.png"
-                                alt=""
-                              />
-                              Stock Out
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn not">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <span className="hot-product p_absolute l_0 t_7">
-                              Hot
-                            </span>
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-357.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-357.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Accessories</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Wireless charging inductive coupling
-                              </Link>
-                            </h4>
-                            <h5>$33.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-358.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-358.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Rauter</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Generators can be powered
-                              </Link>
-                            </h4>
-                            <h5>$69.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(4.9)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="shop-block-two">
-                        <div className="inner-box">
-                          <div className="image-box">
-                            <ul className="option-list">
-                              <li>
-                                <Link
-                                  to="assets/images/shop/shop-359.png"
-                                  className="lightbox-image"
-                                  data-fancybox="gallery"
-                                >
-                                  <i className="far fa-eye"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="shop-details.html">
-                                  <i className="icon-5"></i>
-                                </Link>
-                              </li>
-                              <li>
-                                <button type="button">
-                                  <i className="icon-6"></i>
-                                </button>
-                              </li>
-                            </ul>
-                            <figure className="image">
-                              <img
-                                src="assets/images/shop/shop-359.png"
-                                alt=""
-                              />
-                            </figure>
-                          </div>
-                          <div className="lower-content">
-                            <span className="text">Gaming</span>
-                            <h4>
-                              <Link to="shop-details.html">
-                                Gaming controllers typically various
-                              </Link>
-                            </h4>
-                            <h5>$19.99</h5>
-                            <ul className="rating">
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <i className="icon-11"></i>
-                              </li>
-                              <li>
-                                <span>(5)</span>
-                              </li>
-                            </ul>
-                            <span className="product-stock">
-                              <img
-                                src="assets/images/icons/icon-1.png"
-                                alt=""
-                              />
-                              In Stock
-                            </span>
-                            <div className="cart-btn">
-                              <button type="button" className="theme-btn">
-                                Add to Cart<span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                      )}
-      {view === "list" && (
-                  <div className="shop-list-content">
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <span className="discount-product p_absolute">
-                            -6%
-                          </span>
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-360.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">Video</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              Vintage 1970s Sony AVC-1420 Video
-                            </Link>
-                          </h4>
-                          <h5>
-                            $200.99<del>$210.99</del>
-                          </h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(4.5)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-361.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">watch</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              Smart watch latest model in the best
-                            </Link>
-                          </h4>
-                          <h5>$199.99</h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(4.0)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-362.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">Refrigerator</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              double door refrigerator in the best
-                            </Link>
-                          </h4>
-                          <h5>$999.99</h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(4.8)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cta-section mb_30">
-                      <div className="inner-container">
-                        <div
-                          className="bg-layer"
-                          style={{
-                            backgroundImage:
-                              "url('assets/images/background/cta-bg.jpg')",
-                          }}
-                        ></div>
-                        <div className="content-box">
-                          <span className="text">Trending</span>
-                          <h2>Get the Virtual Experience</h2>
-                          <h3>
-                            <span>Starting From</span> $83.99
-                          </h3>
-                          <div className="btn-box">
-                            <Link to="/" className="theme-btn btn-one">
-                              Shop Now<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <span className="discount-product p_absolute">
-                            -6%
-                          </span>
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-363.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">Generators</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              Generators can be powered by
-                            </Link>
-                          </h4>
-                          <h5>$499.99</h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(3.9)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <span className="discount-product p_absolute">
-                            -6%
-                          </span>
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-364.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">Computer</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              iMac offer varying amounts of RAM
-                            </Link>
-                          </h4>
-                          <h5>$1200.99</h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(4.9)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="shop-block-seven">
-                      <div className="inner-box">
-                        <div className="image-box">
-                          <figure className="image">
-                            <img src="assets/images/shop/shop-365.png" alt="" />
-                          </figure>
-                        </div>
-                        <div className="content-box">
-                          <span className="text">Video</span>
-                          <h4>
-                            <Link to="shop-details.html">
-                              Wireless charging relies on inductive
-                            </Link>
-                          </h4>
-                          <h5>$89.99</h5>
-                          <ul className="rating">
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <i className="icon-11"></i>
-                            </li>
-                            <li>
-                              <span>(5)</span>
-                            </li>
-                          </ul>
-                          <span className="product-stock mb_30">
-                            <img src="assets/images/icons/icon-1.png" alt="" />
-                            In Stock
-                          </span>
-                          <div className="cart-btn">
-                            <button type="button" className="theme-btn">
-                              Add to Cart<span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </button>
-                          </div>
-                        </div>
-                        <div className="feature-content">
-                          <ul className="feature-list clearfix">
-                            <li>1/2.5-Inch Large MOS Sensor</li>
-                            <li>
-                              24x Optical Zoom and 32x 4K Intelligent Zoom
-                            </li>
-                            <li>5-Axis HYBRID O.I.S Image Stabilisation</li>
-                            <li>Wireless Twin Sub Camera Functionality</li>
-                            <li>Active Contrast and HDR Movie Mode</li>
-                            <li>26 Megapixel Still Photos</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                       )}
+                  )}
                 </div>
 
                 <div className="pagination-wrapper centred pt_20">
