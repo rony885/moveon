@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ toggleMenu, menuOpen }) => {
+const Header = ({ toggleMenu, toggleCategory }) => {
   return (
     <>
       <header className="main-header">
@@ -92,11 +92,16 @@ const Header = ({ toggleMenu, menuOpen }) => {
             </div>
           </div>
         </div>
+
         {/* <!-- header-lower --> */}
         <div className="header-lower">
           <div className="large-container">
             <div className="outer-box">
-              <div className="category-box">
+              <div
+                className="category-box"
+                style={{ cursor: "pointer" }}
+                onClick={toggleCategory}
+              >
                 <div className="text">
                   <i className="fas fa-bars"></i>
                   <span>All Categories</span>
