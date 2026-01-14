@@ -690,19 +690,19 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                             <Link to="shop-details-2">Shop Details 2</Link>
                           </li>
                           <li>
-                            <Link to="cart">Cart</Link>
+                            <Link to="/cart">Cart</Link>
                           </li>
                           <li>
-                            <Link to="checkout">Checkout</Link>
+                            <Link to="/checkout">Checkout</Link>
                           </li>
                           <li>
-                            <Link to="search">Search Result</Link>
+                            <Link to="/search">Search Result</Link>
                           </li>
                           <li>
-                            <Link to="account">Account</Link>
+                            <Link to="/profile">Account</Link>
                           </li>
                           <li>
-                            <Link to="compare">Compare</Link>
+                            <Link to="/compare">Compare</Link>
                           </li>
                         </ul>
                       </li>
@@ -716,10 +716,10 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                             <Link to="/login">Log In</Link>
                           </li>
                           <li>
-                            <Link to="/signup">Sign Up</Link>
+                            <Link to="/sign-up">Sign Up</Link>
                           </li>
                           <li>
-                            <Link to="error">404</Link>
+                            <Link to="/error">404</Link>
                           </li>
                         </ul>
                       </li>
