@@ -78,7 +78,8 @@ const MobileMenu = ({ menuOpen, closeMenu }) => {
       <nav className="menu-box">
         <div className="nav-logo">
           <Link to="/">
-            <img src="/assets/images/logo-light.png" alt="" title="" />
+            {/* <img src="/assets/images/logo-light.png" alt="" title="" /> */}
+            <img src="/assets/images/trade day.png" alt="" title="" />
           </Link>
         </div>
         <div className="menu-outer">

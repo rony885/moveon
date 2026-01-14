@@ -11,7 +11,8 @@ const Header = ({ toggleMenu, toggleCategory }) => {
             <div className="upper-inner">
               <figure className="logo-box">
                 <Link to="/">
-                  <img src="/assets/images/logo-light.png" alt="" />
+                  {/* <img src="/assets/images/logo-light.png" alt="" /> */}
+                  <img src="/assets/images/trade day.png" alt="" />
                 </Link>
               </figure>
               <div className="search-area">

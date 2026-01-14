@@ -18,6 +18,9 @@ import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import Profile from "./pages/Authentication/Profile";
+import Login from "./pages/Authentication/Login";
+import Registration from "./pages/Authentication/Registration";
+import About from "./pages/About/About";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -77,6 +80,7 @@ function App() {
           />
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
             <Route path="/shop" element={<Product />}></Route>
             <Route
               path="/shop-details"
@@ -88,6 +92,8 @@ function App() {
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/sign-up" element={<Registration />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer />
