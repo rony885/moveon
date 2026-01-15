@@ -91,7 +91,7 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
-            <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/account" element={<Profile />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/sign-up" element={<Registration />}></Route>
             <Route path="*" element={<NotFound />}></Route>

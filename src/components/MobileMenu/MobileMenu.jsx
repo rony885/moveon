@@ -64,10 +64,16 @@
 
 // export default MobileMenu;
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const MobileMenu = ({ menuOpen, closeMenu }) => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
       <div className="menu-backdrop" onClick={closeMenu}></div>
@@ -90,125 +96,137 @@ const MobileMenu = ({ menuOpen, closeMenu }) => {
             <ul className="navigation clearfix">
               <li className="current dropdown">
                 <Link to="/">Home</Link>
-                <ul>
+                <ul style={{ display: openIndex === 0 ? "block" : "none" }}>
                   <li>
                     <Link to="/">Electronics</Link>
                   </li>
                   <li>
-                    <Link to="index-3.html">Grocery</Link>
+                    <Link to="index-3">Grocery</Link>
                   </li>
                   <li>
-                    <Link to="index-4.html">Fish &amp; Meat</Link>
+                    <Link to="index-4">Fish &amp; Meat</Link>
                   </li>
                   <li>
-                    <Link to="index-5.html">Vegetable</Link>
+                    <Link to="index-5">Vegetable</Link>
                   </li>
                   <li>
-                    <Link to="index-6.html">Furniture</Link>
+                    <Link to="index-6">Furniture</Link>
                   </li>
                   <li>
-                    <Link to="index-7.html">Medical</Link>
+                    <Link to="index-7">Medical</Link>
                   </li>
                   <li>
-                    <Link to="index-8.html">Kids</Link>
+                    <Link to="index-8">Kids</Link>
                   </li>
                   <li>
-                    <Link to="index-9.html">Gardeing</Link>
+                    <Link to="index-9">Gardeing</Link>
                   </li>
                   <li>
-                    <Link to="index-10.html">Watch</Link>
+                    <Link to="index-10">Watch</Link>
                   </li>
                   <li>
-                    <Link to="index-11.html">Pet</Link>
+                    <Link to="index-11">Pet</Link>
                   </li>
                 </ul>
-                <div className="dropdown-btn">
+                <div
+                  className={`dropdown-btn ${openIndex === 0 ? "open" : ""}`}
+                  onClick={() => handleToggle(0)}
+                >
                   <span className="fas fa-angle-down"></span>
                 </div>
               </li>
               <li className="dropdown">
                 <Link to="/">Shop</Link>
-                <ul>
+                <ul style={{ display: openIndex === 1 ? "block" : "none" }}>
                   <li>
-                    <Link to="shop.html">Shop Page 1</Link>
+                    <Link to="/shop">Shop Page 1</Link>
                   </li>
                   <li>
-                    <Link to="shop-2.html">Shop Page 2</Link>
+                    <Link to="shop-2">Shop Page 2</Link>
                   </li>
                   <li>
-                    <Link to="shop-3.html">Shop Page 3</Link>
+                    <Link to="shop-3">Shop Page 3</Link>
                   </li>
                   <li>
-                    <Link to="shop-4.html">Shop Page 4</Link>
+                    <Link to="shop-4">Shop Page 4</Link>
                   </li>
                   <li>
-                    <Link to="shop-5.html">Shop Page 5</Link>
+                    <Link to="shop-5">Shop Page 5</Link>
                   </li>
                   <li>
-                    <Link to="shop-details.html">Shop Details 1</Link>
+                    <Link to="/shop-details">Shop Details 1</Link>
                   </li>
                   <li>
-                    <Link to="shop-details-2.html">Shop Details 2</Link>
+                    <Link to="shop-details-2">Shop Details 2</Link>
                   </li>
                   <li>
-                    <Link to="cart.html">Cart</Link>
+                    <Link to="/cart">Cart</Link>
                   </li>
                   <li>
-                    <Link to="checkout.html">Checkout</Link>
+                    <Link to="/checkout">Checkout</Link>
                   </li>
                   <li>
-                    <Link to="search.html">Search Result</Link>
+                    <Link to="/search">Search Result</Link>
                   </li>
                   <li>
-                    <Link to="account.html">Account</Link>
+                    <Link to="/account">Account</Link>
                   </li>
                   <li>
-                    <Link to="compare.html">Compare</Link>
+                    <Link to="/compare">Compare</Link>
                   </li>
                 </ul>
-                <div className="dropdown-btn">
+                <div
+                  className={`dropdown-btn ${openIndex === 1 ? "open" : ""}`}
+                  onClick={() => handleToggle(1)}
+                >
                   <span className="fas fa-angle-down"></span>
                 </div>
               </li>
               <li className="dropdown">
                 <Link to="/">Pages</Link>
-                <ul>
+                <ul style={{ display: openIndex === 2 ? "block" : "none" }}>
                   <li>
-                    <Link to="about.html">About Us</Link>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="login.html">Log In</Link>
+                    <Link to="/login">Log In</Link>
                   </li>
                   <li>
-                    <Link to="signup.html">Sign Up</Link>
+                    <Link to="/sign-up">Sign Up</Link>
                   </li>
                   <li>
-                    <Link to="error.html">404</Link>
+                    <Link to="/error">404</Link>
                   </li>
                 </ul>
-                <div className="dropdown-btn">
+                <div
+                  className={`dropdown-btn ${openIndex === 2 ? "open" : ""}`}
+                  onClick={() => handleToggle(2)}
+                >
                   <span className="fas fa-angle-down"></span>
                 </div>
               </li>
               <li className="dropdown">
                 <Link to="/">Blog</Link>
-                <ul>
+                <ul style={{ display: openIndex === 3 ? "block" : "none" }}>
                   <li>
-                    <Link to="blog.html">Blog Grid</Link>
+                    <Link to="/blog">Blog Grid</Link>
                   </li>
                   <li>
-                    <Link to="blog-2.html">Blog Standard</Link>
+                    <Link to="blog-2">Blog Standard</Link>
                   </li>
                   <li>
-                    <Link to="blog-details.html">Blog Details</Link>
+                    <Link to="/blog-details">Blog Details</Link>
                   </li>
                 </ul>
-                <div className="dropdown-btn">
+                <div
+                  className={`dropdown-btn ${openIndex === 3 ? "open" : ""}`}
+                  onClick={() => handleToggle(3)}
+                >
                   <span className="fas fa-angle-down"></span>
                 </div>
               </li>
               <li>
-                <Link to="contact.html">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

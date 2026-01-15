@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = ({ toggleMenu, toggleCategory }) => {
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
     <>
       <header className="main-header">
@@ -700,7 +702,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                             <Link to="/search">Search Result</Link>
                           </li>
                           <li>
-                            <Link to="/profile">Account</Link>
+                            <Link to="/account">Account</Link>
                           </li>
                           <li>
                             <Link to="/compare">Compare</Link>
@@ -767,19 +769,35 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                       <i className="icon-6"></i>
                     </Link>
                   </li>
+
                   <li className="cart-box">
                     <Link
                       className="shopping-cart shopping-cart-one"
                       to="#"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="offcanvasRight"
+                      // data-bs-toggle="offcanvas"
+                      // data-bs-target="offcanvasRight"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setCartOpen(true);
+                      }}
                     >
                       <i className="icon-7"></i>
                       <span>2</span>
                     </Link>
-                    <div className="cart-menu cart-menu-one">
+                    {/* <div className="cart-menu cart-menu-one"> */}
+                    <div
+                      className={`cart-menu cart-menu-one ${
+                        cartOpen ? "cart-visible" : ""
+                      }`}
+                    >
                       <div className="close-icon close-icon-one">
-                        <Link to="#">
+                        <Link
+                          to="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setCartOpen(false);
+                          }}
+                        >
                           <i className="icon-9"></i>
                         </Link>
                       </div>
@@ -853,13 +871,21 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                         <span className="cart-total-price">$1103.97</span>
                       </div>
                       <div className="cart-action">
-                        <Link to="cart" className="theme-btn btn-two">
+                        <Link
+                          to="/cart"
+                          className="theme-btn btn-two"
+                          onClick={() => setCartOpen(false)}
+                        >
                           View Cart <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
                         </Link>
-                        <Link to="checkout" className="theme-btn btn-one">
+                        <Link
+                          to="/checkout"
+                          className="theme-btn btn-one"
+                          onClick={() => setCartOpen(false)}
+                        >
                           Checkout <span></span>
                           <span></span>
                           <span></span>

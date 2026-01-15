@@ -27,7 +27,6 @@ const CategoryMenu = ({ categoryOpen, closeCategory }) => {
           <ul className="category-list clearfix">
             <li className="category-dropdown">
               <Link to="#">Phone and Tablets</Link>
-
               <ul style={{ display: openIndex === 0 ? "block" : "none" }}>
                 <li>
                   <Link to="/shop-details">Android</Link>
