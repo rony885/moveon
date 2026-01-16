@@ -1,26 +1,27 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import PageDirection from "./components/PageDirection";
 import Header from "./components/Header/Header";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import CategoryMenu from "./components/CategoryMenu";
-import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
 import ScrolltoTop from "./components/ScrolltoTop";
-import Product from "./pages/Product/Product";
 import NotFound from "./components/NotFound";
-import ProductDetailsInfo from "./pages/ProductDetails/ProductDetailsInfo";
-import Contact from "./pages/Contact/Contact";
+
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Product from "./pages/Product/Product";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import Contact from "./pages/Contact/Contact";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import Profile from "./pages/Authentication/Profile";
 import Login from "./pages/Authentication/Login";
 import Registration from "./pages/Authentication/Registration";
-import About from "./pages/About/About";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -82,10 +83,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/shop" element={<Product />}></Route>
-            <Route
-              path="/shop-details"
-              element={<ProductDetailsInfo />}
-            ></Route>
+            <Route path="/shop-details" element={<ProductDetails />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog-details" element={<BlogDetails />}></Route>
             <Route path="/contact" element={<Contact />}></Route>

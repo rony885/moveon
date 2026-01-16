@@ -616,7 +616,7 @@
 
 // export default ProductDetailsInfo;
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -624,8 +624,11 @@ import Slider from "react-slick";
 // 🔴 REQUIRED CSS (THIS FIXES BLANK ISSUE)
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProductDetailsTab from "./ProductDetailsTab";
 
 const ProductDetailsInfo = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const mainSlider = useRef(null);
 
   const images = [
@@ -718,9 +721,16 @@ const ProductDetailsInfo = () => {
                                 <li key={i}>
                                   <button
                                     type="button"
-                                    onClick={() =>
-                                      mainSlider.current.slickGoTo(i)
+                                    // onClick={() =>
+                                    //   mainSlider.current.slickGoTo(i)
+                                    // }
+                                    className={
+                                      activeIndex === i ? "active" : ""
                                     }
+                                    onClick={() => {
+                                      setActiveIndex(i);
+                                      mainSlider.current.slickGoTo(i);
+                                    }}
                                     style={{
                                       cursor: "pointer",
                                     }}
@@ -746,12 +756,221 @@ const ProductDetailsInfo = () => {
                   <span className="upper-text">Washing Machine</span>
                   <h2>
                     Sharp Full Auto Front Loading Inverter Washing Machine
+                    ES-FW105D7PS | 10.5 KG
                   </h2>
                   <h3>$500.99</h3>
+                  <ul className="rating mb_25">
+                    <li>
+                      <i className="icon-11"></i>
+                    </li>
+                    <li>
+                      <i className="icon-11"></i>
+                    </li>
+                    <li>
+                      <i className="icon-11"></i>
+                    </li>
+                    <li>
+                      <i className="icon-11"></i>
+                    </li>
+                    <li>
+                      <i className="icon-11"></i>
+                    </li>
+                    <li>
+                      <span>(05)</span>
+                    </li>
+                  </ul>
+                  <div className="text-box mb_30">
+                    <p>
+                      This powerful front loading washing machine will gently
+                      clean your laundry so your favorite clothes can remain as
+                      good as new. Now, washing clothes is much easier and more
+                      fun with the help of this powerful washing machine.
+                    </p>
+                    <p>
+                      This would help you in the decision making process. Your
+                      purchase decision should depend upon what features and
+                      functions you require.
+                    </p>
+                  </div>
+                  <ul className="discription-box mb_30 clearfix">
+                    <li>
+                      <strong>Brand :</strong>Toshiba
+                    </li>
+                    <li>
+                      <strong>Product SKU :</strong>#KKLW30
+                    </li>
+                    <li>
+                      <strong>Category :</strong>front-load washing machines
+                    </li>
+                    <li>
+                      <strong>Availability :</strong>
+                      <span className="product-stock">
+                        <img src="assets/images/icons/icon-1.png" alt="" /> In
+                        Stock
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="color-box mb_30">
+                    <h6>
+                      Color<span>*</span>
+                    </h6>
+                    <ul className="color-list">
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="color1"
+                            name="same"
+                            checked
+                          />
+                          <label for="color1"></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="color2"
+                            name="same"
+                          />
+                          <label for="color2"></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="color3"
+                            name="same"
+                          />
+                          <label for="color3"></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="color4"
+                            name="same"
+                          />
+                          <label for="color4"></label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="size-box mb_40">
+                    <h6>
+                      Size<span>*</span>
+                    </h6>
+                    <ul className="size-list">
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="size1"
+                            name="same2"
+                            checked
+                          />
+                          <label for="size1">10.5 KG</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="size2"
+                            name="same2"
+                          />
+                          <label for="size2">11 KG</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="size3"
+                            name="same2"
+                          />
+                          <label for="size3">08 KG</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="check-box">
+                          <input
+                            className="check"
+                            type="radio"
+                            id="size4"
+                            name="same2"
+                          />
+                          <label for="size4">09 KG</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="addto-cart-box mb_40">
+                    <ul className="clearfix">
+                      <li className="item-quantity">
+                        <input
+                          className="quantity-spinner"
+                          type="text"
+                          value="1"
+                          name="quantity"
+                        />
+                      </li>
+                      <li className="cart-btn">
+                        <button type="button" className="theme-btn btn-one">
+                          Add To Cart<span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </button>
+                      </li>
+                      <li>
+                        <Link to="/shop-details">
+                          <i className="icon-5"></i>
+                        </Link>
+                      </li>
+                      <li className="like-btn">
+                        <button>
+                          <i className="icon-6"></i>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul className="other-option clearfix">
+                    <li>
+                      <strong>Seller :</strong>Daniel Macron
+                    </li>
+                    <li>
+                      <strong>Tag :</strong>
+                      <span>Best sellers</span>, New Arrivals, On Sale
+                    </li>
+                    <li className="social-links">
+                      <strong>Share :</strong>
+                      <Link to="/shop-details">
+                        <i className="icon-13"></i>
+                      </Link>
+                      <Link to="/shop-details">
+                        <i className="icon-14"></i>
+                      </Link>
+                      <Link to="/shop-details">
+                        <i className="icon-15"></i>
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+
+          <ProductDetailsTab />
         </div>
       </section>
     </Wrapper>
@@ -852,6 +1071,10 @@ const Wrapper = styled.section`
   }
 
   .product-details-content .thumb-box li button:hover {
+    border-color: #000;
+  }
+
+  .product-details-content .thumb-box li button.active {
     border-color: #000;
   }
 
