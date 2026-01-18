@@ -265,7 +265,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_0">
-                          <img src="assets/images/shop/shop-2.png" alt="" />
+                          <img src="/assets/images/shop/shop-2.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -351,7 +351,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_15 b_10">
-                          <img src="assets/images/shop/shop-3.png" alt="" />
+                          <img src="/assets/images/shop/shop-3.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -437,7 +437,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_20 b_30">
-                          <img src="assets/images/shop/shop-4.png" alt="" />
+                          <img src="/assets/images/shop/shop-4.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -527,7 +527,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_0">
-                          <img src="assets/images/shop/shop-5.png" alt="" />
+                          <img src="/assets/images/shop/shop-5.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -607,7 +607,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_20 b_0">
-                          <img src="assets/images/shop/shop-6.png" alt="" />
+                          <img src="/assets/images/shop/shop-6.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -806,7 +806,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-1.png"
+                                src="/assets/images/resource/cart-1.png"
                                 alt=""
                               />
                             </Link>
@@ -827,7 +827,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-2.png"
+                                src="/assets/images/resource/cart-2.png"
                                 alt=""
                               />
                             </Link>
@@ -848,7 +848,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-3.png"
+                                src="/assets/images/resource/cart-3.png"
                                 alt=""
                               />
                             </Link>
@@ -984,7 +984,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_10">
-                          <img src="assets/images/shop/shop-1.png" alt="" />
+                          <img src="/assets/images/shop/shop-1.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1064,7 +1064,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_0">
-                          <img src="assets/images/shop/shop-2.png" alt="" />
+                          <img src="/assets/images/shop/shop-2.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1150,7 +1150,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_15 b_10">
-                          <img src="assets/images/shop/shop-3.png" alt="" />
+                          <img src="/assets/images/shop/shop-3.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1236,7 +1236,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_20 b_30">
-                          <img src="assets/images/shop/shop-4.png" alt="" />
+                          <img src="/assets/images/shop/shop-4.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1326,7 +1326,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_0 b_0">
-                          <img src="assets/images/shop/shop-5.png" alt="" />
+                          <img src="/assets/images/shop/shop-5.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1406,7 +1406,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           Shop now
                         </Link>
                         <figure className="image r_20 b_0">
-                          <img src="assets/images/shop/shop-6.png" alt="" />
+                          <img src="/assets/images/shop/shop-6.png" alt="" />
                         </figure>
                       </div>
                     </div>
@@ -1616,7 +1616,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-1.png"
+                                src="/assets/images/resource/cart-1.png"
                                 alt=""
                               />
                             </Link>
@@ -1637,7 +1637,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-2.png"
+                                src="/assets/images/resource/cart-2.png"
                                 alt=""
                               />
                             </Link>
@@ -1658,7 +1658,7 @@ const Header = ({ toggleMenu, toggleCategory }) => {
                           <figure className="image-box">
                             <Link to="blog-details">
                               <img
-                                src="assets/images/resource/cart-3.png"
+                                src="/assets/images/resource/cart-3.png"
                                 alt=""
                               />
                             </Link>
